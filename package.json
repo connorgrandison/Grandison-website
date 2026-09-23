@@ -1,0 +1,1 @@
+{"name":"grandison-plumbing-heating","private":true,"type":"module","scripts":{"build":"node build.mjs","check":"node --check build.mjs && node --check dist/site.js && node check.mjs","dev":"node preview.mjs"}}

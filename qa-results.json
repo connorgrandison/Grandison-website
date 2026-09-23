@@ -1,0 +1,23 @@
+{
+  "pages": 37,
+  "viewports": [
+    1440,
+    390,
+    320
+  ],
+  "checks": [
+    "routes",
+    "responsive overflow",
+    "images",
+    "form labels",
+    "gallery filters",
+    "lightbox and Escape",
+    "mobile navigation",
+    "service preselection",
+    "honest disabled form",
+    "404 response",
+    "no-JavaScript navigation"
+  ],
+  "failures": [],
+  "consoleErrors": []
+}
