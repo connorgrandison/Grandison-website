@@ -2,17 +2,17 @@
 
 ## Details still needed
 
-- Verified phone, email and current Facebook URL.
+- Verified phone and email. Facebook and Instagram were supplied by the owner and are linked throughout the site.
 - Current Gas Safe registration and the services/qualifications it covers before advertising registration.
 - A working enquiry delivery endpoint and the privacy details for its operation.
 - Confirmed project locations and scopes for fuller case studies.
 - Confirmation of service availability and geographic coverage, especially Edinburgh.
 
-The site remains owner-private. Public search indexing requires an explicit audience change. Confirm business content and contact delivery before that launch.
+The site is public at the owner’s request for sharing. Confirm the remaining business details and website form delivery before promoting it for direct enquiries.
 
 ## Contact form
 
-The form is disabled when `enquiryEndpoint` in `src/business.mjs` is blank, with a clear visitor-facing explanation. It does not save details or simulate delivery. The existing MyBuilder profile remains a working external contact route. Adding a verified phone enables phone links and the sticky mobile Call action. Email and Facebook are also configured centrally.
+The form is disabled when `enquiryEndpoint` in `src/business.mjs` is blank, with a clear visitor-facing explanation. It does not save details or simulate delivery. The supplied Facebook page is the primary external contact route while the website form is unconnected; Instagram and the existing MyBuilder profile are also linked. Adding a verified phone enables phone links and the sticky mobile Call action. Email and Facebook are also configured centrally.
 
 To enable delivery, set an HTTPS endpoint accepting JSON fields `name`, `postcode`, `phone`, `email`, `service`, `message`, `consent`. Validate fields server-side, rate-limit and prevent abuse, securely deliver/store the request, configure CORS if necessary, and return 2xx only when accepted. Never put secret API credentials in public code. Update the privacy notice with the actual controller contact, lawful basis, processors, retention and rights before enabling. Photo uploads are not active; customers can share images through an agreed contact route.
 
