@@ -23,7 +23,17 @@ Change `business.origin` for a custom domain and rebuild to update canonicals, s
 
 Cloudflare Workers hosts the static `dist` output. Run `npm run build` and `npm run check` before publishing via the dashboard or `npx wrangler deploy` with an authenticated account. `wrangler.jsonc` defines the static directory, clean directory URLs and custom 404 handling. The main domain is `grandisonplumbingandheating.co.uk`; `gphfife.co.uk` and both www variants use permanent redirects to it, preserving paths and query strings. The retired `/reviews/` route redirects to `/projects/` through `dist/_redirects`. No runtime server or application secrets are required. Images use responsive WebP and lazy loading. Fonts currently load from Google Fonts with swap; this external connection is described in the privacy notice.
 
-## Sources and limitations
+## Search indexing launch checks
+
+Live checks on 24 September 2026 confirmed that all 33 sitemap URLs return HTTP 200, have matching HTTPS canonical URLs and an H1, and have no `noindex` meta or response-header directive. `robots.txt` allows crawling and advertises the sitemap, which returns XML successfully. The remaining three generated pages (privacy, cookies and 404) are intentionally excluded from indexing. A missing URL returns HTTP 404.
+
+Cloudflare's zone-level **Always Use HTTPS** setting was enabled on 24 September 2026. Keep it enabled: HTTP should redirect permanently to HTTPS, retaining the path and query string. This dashboard setting is separate from `wrangler.jsonc`. The www and short-domain variants also redirect to the canonical full domain.
+
+Search Console setup is still pending selection of the Google account that should own the property. Grandison was not listed in the signed-in account during this check; that does not prove it is absent from every account or from Google's index. Once the correct account is confirmed, verify the domain, submit `https://grandisonplumbingandheating.co.uk/sitemap.xml`, inspect the homepage and key service URLs, and request indexing where appropriate. Do not describe sitemap submission as completed until Search Console confirms it. Discovery, indexing and ranking are separate from deployment; neither a sitemap nor a successful crawl guarantees inclusion or a ranking.
+
+Google guidance: https://developers.google.com/search/docs/crawling-indexing/ask-google-to-recrawl
+
+## Content sources and limitations
 
 - Supplied brief: operator, Fife base, former name, service priorities, target areas.
 - Five supplied original job photos and the supplied logo. Project entries describe visible details; dates, locations, hidden work and customer briefs are not invented.
