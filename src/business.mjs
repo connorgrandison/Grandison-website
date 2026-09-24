@@ -1,11 +1,9 @@
+import fs from 'node:fs';
+const contact = JSON.parse(fs.readFileSync(new URL('./contact.json', import.meta.url), 'utf8'));
 export const business = {
   name: 'Grandison Plumbing & Heating', operator: 'Connor Grandison', formerName: 'Grandison Gas',
-  origin: 'https://grandison-plumbing-heating.darren825731.chatgpt.site', base: 'Fife, Scotland',
-  phone: '', email: '',
-  facebook: 'https://www.facebook.com/p/Grandison-Plumbing-And-Heating-100063805222705/',
-  instagram: 'https://www.instagram.com/grandisonplumbingandheating/',
+  origin: 'https://grandisonplumbingandheating.co.uk', base: 'Fife, Scotland',
+  ...contact,
   gasSafeNumber: '', gasSafeConfirmed: false,
-  enquiryEndpoint: '', googleVerification: '', bingVerification: '',
-  profile: 'https://www.mybuilder.com/profile/connor_grandison',
-  reviews: 'https://www.mybuilder.com/profile/connor_grandison/reviews?page=2'
+  googleVerification: '', bingVerification: '',
 };

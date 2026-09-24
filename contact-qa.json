@@ -1,0 +1,20 @@
+{
+  "date": "2026-09-24",
+  "environment": "local preview and Cloudflare production",
+  "productionUrl": "https://grandisonplumbingandheating.co.uk",
+  "contentPagesChecked": 36,
+  "contactViewportsVisuallyChecked": [1440, 390, 320],
+  "checks": {
+    "buildAndMetadataChecks": "passed",
+    "platformLinksAndQuotesAbsentFromSourceAndOutput": "passed",
+    "contactHasNoDisconnectedForm": "passed",
+    "callTarget": "tel:+447545075788",
+    "textTarget": "sms:+447545075788",
+    "narrowViewportOverflow": false,
+    "logoOnNavyBackground": "visually checked",
+    "productionContactAndAbout": "200 with phone and without removed platform",
+    "retiredReviewsRoute": "301 to /projects/",
+    "missingPage": "404 with custom page",
+    "shortAndWwwDomains": "301 to canonical domain preserving path and query"
+  }
+}
