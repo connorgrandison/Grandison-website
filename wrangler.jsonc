@@ -2,6 +2,7 @@
   "name": "grandison-plumbing-heating",
   "account_id": "5f4c86428c681e3b9f08f64b8db4d247",
   "compatibility_date": "2026-09-24",
+  "workers_dev": false,
   "routes": [
     { "pattern": "grandisonplumbingandheating.co.uk", "custom_domain": true }
   ],
