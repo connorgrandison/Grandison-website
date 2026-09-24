@@ -2,6 +2,8 @@
 
 Complete first-version website with 36 static pages: homepage, services, About, five photo-led project entries, seven service-area pages, contact, two planning guides, privacy, cookies and 404. Public files are in `dist`.
 
+Source repository: https://github.com/connorgrandison/Grandison-website (`main`). Live website: https://grandisonplumbingandheating.co.uk on Cloudflare Workers. After verifying changes, push source and tracked output to GitHub and publish to Cloudflare separately; automatic deployment from GitHub is not configured.
+
 Business facts and photos come from the supplied brief and assets. No reviews, ratings, accreditations, contact details, experience durations, or project locations have been invented.
 
 Edit `src/contact.json` to update the phone, email, Facebook or Instagram in one place, then rebuild and publish. `src/business.mjs` contains business identity and domain configuration. `src/data.mjs` contains service, project and area content. `build.mjs` generates pages and SEO files. `src/about.html` preserves the About-page body. CSS and browser scripts in `dist` are tracked source assets and are retained by the build. No runtime package dependencies are needed.

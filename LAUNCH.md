@@ -17,7 +17,7 @@ There is no website enquiry form or simulated submission. Call and text open the
 
 ## Search and hosting
 
-Published to Cloudflare on 24 September 2026 as `grandison-plumbing-heating` in Connor's account. Main site: https://grandisonplumbingandheating.co.uk . Hosting address: https://grandison-plumbing-heating.connorgrandison.workers.dev . The GitHub connector currently exposes no repositories, so automated GitHub deployment has not been configured. The earlier Sites URL is a separate, older preview and should no longer be shared.
+Published to Cloudflare on 24 September 2026 as `grandison-plumbing-heating` in Connor's account. Main site: https://grandisonplumbingandheating.co.uk . Hosting address: https://grandison-plumbing-heating.connorgrandison.workers.dev . The confirmed source repository is https://github.com/connorgrandison/Grandison-website on `main`. Push verified source and tracked output there for each update. GitHub pushes do not currently deploy automatically: publish to Cloudflare separately and verify both outcomes. The earlier Sites URL is a separate, older preview and should no longer be shared.
 
 Change `business.origin` for a custom domain and rebuild to update canonicals, schema, sitemap and robots. All content is included in the HTML. JSON-LD connects the business, operator and site; service pages use Service and key pages use AboutPage/ContactPage. No ratings, invented accreditation or FAQ rich-result claims are made. Google/Bing verification fields exist in business configuration. Analytics and advertising are not enabled.
 
