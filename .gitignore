@@ -1,2 +1,6 @@
 .sites-runtime/
 *.tar.gz
+node_modules/
+.wrangler/
+.dev.vars*
+.env*

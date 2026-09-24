@@ -4,6 +4,8 @@ Complete first-version website with 36 static pages: homepage, services, About, 
 
 Source repository: https://github.com/connorgrandison/Grandison-website (`main`). Live website: https://grandisonplumbingandheating.co.uk on Cloudflare Workers. After verifying changes, push source and tracked output to GitHub and publish to Cloudflare separately; automatic deployment from GitHub is not configured.
 
+Link previews use the supplied project photographs through Open Graph and large-image card metadata. `src/social.mjs` chooses a service/project photograph, falling back to the freestanding bath for general pages. The original JPEGs are tracked under `dist/assets/share-*-v1.jpg`; use a new versioned filename when replacing one. Messaging services choose their own crop and may cache previews. Wrangler is a development dependency: run `npm ci`, then `npx wrangler deploy` using an account authorized for the exact account ID in `wrangler.jsonc`.
+
 Business facts and photos come from the supplied brief and assets. No reviews, ratings, accreditations, contact details, experience durations, or project locations have been invented.
 
 Edit `src/contact.json` to update the phone, email, Facebook or Instagram in one place, then rebuild and publish. `src/business.mjs` contains business identity and domain configuration. `src/data.mjs` contains service, project and area content. `build.mjs` generates pages and SEO files. `src/about.html` preserves the About-page body. CSS and browser scripts in `dist` are tracked source assets and are retained by the build. No runtime package dependencies are needed.
