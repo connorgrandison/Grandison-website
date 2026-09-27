@@ -46,5 +46,7 @@ page('/404/','Page Not Found','This page could not be found. Return to Grandison
 fs.writeFileSync(path.join(out,'favicon.svg'),`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" rx="6" fill="#132c3b"/><text x="5" y="25" font-family="Arial" font-weight="bold" font-size="26" fill="white">G</text><path d="M6 29h20" stroke="#f57719" stroke-width="3"/></svg>`);
 fs.writeFileSync(path.join(out,'sitemap.xml'),`<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${routes.filter(r=>!r.noindex).map(r=>`<url><loc>${b.origin+r.url}</loc></url>`).join('')}</urlset>`);
 fs.writeFileSync(path.join(out,'robots.txt'),`User-agent: *\nAllow: /\nSitemap: ${b.origin}/sitemap.xml\n`);
+fs.mkdirSync(path.join(out,'.well-known'),{recursive:true});
+fs.writeFileSync(path.join(out,'.well-known/security.txt'),`Contact: ${b.origin}/contact/\nExpires: 2027-09-01T12:00:00Z\nPreferred-Languages: en\nCanonical: ${b.origin}/.well-known/security.txt\n`);
 fs.writeFileSync('routes.json',JSON.stringify(routes,null,2));
 console.log(`Built ${routes.length} static pages.`);

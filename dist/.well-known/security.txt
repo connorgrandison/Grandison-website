@@ -1,0 +1,4 @@
+Contact: https://grandisonplumbingandheating.co.uk/contact/
+Expires: 2027-09-01T12:00:00Z
+Preferred-Languages: en
+Canonical: https://grandisonplumbingandheating.co.uk/.well-known/security.txt
