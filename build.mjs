@@ -47,6 +47,6 @@ fs.writeFileSync(path.join(out,'favicon.svg'),`<svg xmlns="http://www.w3.org/200
 fs.writeFileSync(path.join(out,'sitemap.xml'),`<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${routes.filter(r=>!r.noindex).map(r=>`<url><loc>${b.origin+r.url}</loc></url>`).join('')}</urlset>`);
 fs.writeFileSync(path.join(out,'robots.txt'),`User-agent: *\nAllow: /\nSitemap: ${b.origin}/sitemap.xml\n`);
 fs.mkdirSync(path.join(out,'.well-known'),{recursive:true});
-fs.writeFileSync(path.join(out,'.well-known/security.txt'),`Contact: ${b.origin}/contact/\nExpires: 2027-09-01T12:00:00Z\nPreferred-Languages: en\nCanonical: ${b.origin}/.well-known/security.txt\n`);
+fs.writeFileSync(path.join(out,'.well-known/security.txt'),`Contact: ${b.origin}/contact/\nExpires: 2027-09-01T13:00:00Z\nPreferred-Languages: en\nCanonical: ${b.origin}/.well-known/security.txt\n`);
 fs.writeFileSync('routes.json',JSON.stringify(routes,null,2));
 console.log(`Built ${routes.length} static pages.`);
