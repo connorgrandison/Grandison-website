@@ -1,5 +1,11 @@
 # Grandison Plumbing & Heating
 
+## Static Google reviews
+
+The custom homepage review section is generated from `src/reviews.json` by `src/reviews.mjs`. It uses a dated snapshot of the public Google rating and review wording: Darren Gray’s review was read from the live Google profile, and David Campbell’s was supplied by the owner’s website collaborator. Both were posted on 2 October 2026, when Google displayed 5.0 from two reviews. Update the rating, count, check date and review entries together when refreshing it. This is a static section: no API, billing account, third-party widget subscription, browser review script, or scheduled sync is used. Do not invent review text or present the snapshot as a live feed. Review content is not added as aggregate-rating structured data. The Google Maps logo is the official unmodified attribution asset.
+
+The unused Google Cloud project `grandison-website-reviews` has no linked billing account or API key; it is not needed by the website.
+
 Complete first-version website with 36 static pages: homepage, services, About, five photo-led project entries, seven service-area pages, contact, two planning guides, privacy, cookies and 404. Public files are in `dist`.
 
 Source repository: https://github.com/connorgrandison/Grandison-website (`main`). Live website: https://grandisonplumbingandheating.co.uk on Cloudflare Workers. After verifying changes, push source and tracked output to GitHub and publish to Cloudflare separately; automatic deployment from GitHub is not configured.

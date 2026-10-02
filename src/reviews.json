@@ -1,0 +1,22 @@
+{
+  "rating": 5.0,
+  "count": 2,
+  "checkedOn": "2026-10-02",
+  "checkedLabel": "2 October 2026",
+  "profileUrl": "https://www.google.com/maps?cid=11737845119236094780",
+  "reviews": [
+    {
+      "author": "Darren Gray",
+      "rating": 5,
+      "date": "2 October 2026",
+      "text": "Had Grandison Plumbing & Heating out recently to service my boiler and would definitely recommend them. Really cost-effective, turned up exactly when expected and did a great job.\n\nHe was also really helpful throughout, explaining what he was checking, giving useful advice and answering any questions I had without trying to upsell anything unnecessary.\n\nProfessional, knowledgeable and reliable. I’ll definitely use Grandison Plumbing & Heating again."
+    },
+    {
+      "author": "David Campbell",
+      "authorUrl": "https://www.google.com/maps/contrib/117309091618564093751/reviews?hl=en-GB",
+      "rating": 5,
+      "date": "2 October 2026",
+      "text": "Have used Grandison Plumbing and heating on many occasions whilst renovating bathrooms and upgrading full central heating systems in our current and previous homes. The work carried out is professional and very efficient, to a very high standard. Would definitely recommend this company, always on time and reliable service."
+    }
+  ]
+}
