@@ -1,0 +1,42 @@
+/* Area guides use the site's existing colours, typography and spacing. */
+.coverage-jumps{display:flex;flex-wrap:wrap;gap:14px 30px;padding:24px 0;border-bottom:1px solid var(--line)}
+.coverage-jumps a,.coverage-links a{color:var(--blue);font-size:15px;font-weight:600;text-underline-offset:4px}
+.coverage-directory .coverage-lead{max-width:680px;color:var(--muted);margin-top:20px}
+.coverage-regions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin-top:35px}
+.coverage-regions article{padding:30px;background:var(--pale);border-top:3px solid var(--blue);scroll-margin-top:24px}
+.coverage-regions h3{margin:0 0 22px;font-size:25px}
+.coverage-towns{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:8px 18px;font-size:16px;color:var(--muted)}
+.coverage-towns li{max-width:100%}
+.coverage-links{display:flex;flex-wrap:wrap;gap:14px 25px;margin-top:28px}
+.coverage-services,.coverage-planning,.coverage-outside{border-top:1px solid var(--line)}
+.coverage-service-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:36px;margin-top:35px}
+.coverage-service-grid article{border-top:1px solid var(--line);padding-top:12px}
+.coverage-service-grid h3{font-size:26px;line-height:1.25;margin-bottom:20px}
+.coverage-service-grid p{color:var(--muted);font-size:16px}
+.coverage-service-grid ul{list-style:none;padding:0;margin-top:24px}
+.coverage-service-grid li{margin:12px 0}
+.coverage-service-grid a{font-size:15px;color:var(--blue);text-underline-offset:4px}
+.coverage-planning ul{padding-left:22px;margin:24px 0}
+.coverage-guides{padding:0}
+.coverage-guides h3{font-size:28px;margin:15px 0}
+.coverage-projects .project-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+.coverage-projects .section-heading>p{max-width:400px}
+.coverage-contact{background:var(--pale);padding:42px;display:grid;grid-template-columns:minmax(0,1.4fr) minmax(250px,1fr);gap:50px;align-items:center;margin-bottom:70px}
+.coverage-contact h2{font-size:34px}
+.coverage-contact p:not(.eyebrow){color:var(--muted);margin-top:20px;max-width:670px}
+.coverage-contact .button{background:var(--navy);color:white}
+.coverage-hero .hero-copy{min-width:0}
+.coverage-hero h1{font-size:clamp(38px,4vw,58px);overflow-wrap:break-word}
+@media(max-width:760px){
+ .coverage-regions,.coverage-service-grid,.coverage-projects .project-grid{grid-template-columns:1fr}
+ .coverage-regions article{padding:25px}
+ .coverage-regions h3{font-size:23px}
+ .coverage-service-grid{gap:28px}
+ .coverage-contact{display:block;padding:28px 24px;margin-bottom:45px}
+ .coverage-contact>div+div{margin-top:28px}
+ .coverage-contact h2{font-size:29px}
+ .coverage-contact .button{width:100%;gap:12px;font-size:14px}
+ .coverage-hero h1{font-size:clamp(35px,9vw,46px);letter-spacing:-1.4px}
+ .coverage-hero .hero-photo{height:350px}
+ .coverage-jumps{padding:22px 0}
+}
