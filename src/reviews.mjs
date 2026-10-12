@@ -18,3 +18,14 @@ export function reviewsSection() {
     </div>
   </section>`;
 }
+
+export function bathroomReview() {
+  const review = data.reviews.find(review => review.author === 'David Campbell');
+  if (!review) return '';
+  return `<section class="section bathroom-review" aria-labelledby="bathroom-review-heading">
+    <div><p class="eyebrow">CUSTOMER EXPERIENCE</p><h2 id="bathroom-review-heading">Bathroom work, in a customer’s words.</h2></div>
+    <div><blockquote><p>${esc(review.text)}</p></blockquote>
+    <p class="review-credit">${esc(review.author)} · Google review · ${esc(review.date)}</p>
+    <a class="text-link" href="${esc(review.authorUrl || data.profileUrl)}">Read the review on Google ↗</a></div>
+  </section>`;
+}
